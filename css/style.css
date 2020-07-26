@@ -47,9 +47,16 @@ p{
 
 .container {
   max-width: 960px;
+  padding-right: 20px;
   margin: auto;
   overflow: hidden;
-  padding: 4rem 1rem;
+  /* padding: 4rem 1rem; */
+  padding: 10px 10px;
+
+}
+
+.responsive-table{
+  padding-right: 40px;
 }
 
 
@@ -209,6 +216,9 @@ footer p {
 
   .services div {
     padding: 1.4rem 1rem;
+  }
+  .container{
+    padding: 70px 0;
   }
 }
 
