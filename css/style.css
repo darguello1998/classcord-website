@@ -110,7 +110,6 @@ li {
 .buttons {
   display: flex;
   flex-direction: row;
-  lex-wrap: wrap;
   justify-content: center;
   text-align: center;
   width: 100%;
