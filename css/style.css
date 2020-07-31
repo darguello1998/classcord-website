@@ -202,7 +202,7 @@ footer p {
   margin: 0;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE
 @media (max-width: 58px) {
 
   .header-content {
@@ -236,4 +236,4 @@ footer p {
   .header-content {
     top: 0;
   }
-}
+} */
