@@ -29,7 +29,6 @@ p{
 .header {
   height: 100vh;
   background: #11998e;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-position: top;
@@ -229,7 +228,7 @@ footer p {
 }
 
 /* Landscape */
-@media(max-height: 500px) {
+/* @media(max-height: 500px) {
   .header-content .title, .header-content .text {
     display: none;
   }
