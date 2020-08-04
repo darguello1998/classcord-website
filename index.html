@@ -20,15 +20,14 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174234085-1"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174234085-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-174234085-1');
-</script>
-
+    gtag('config', 'UA-174234085-1');
+  </script>
   </head>
   <body>
 
@@ -94,6 +93,14 @@
           <li class="table-row">
             <div class="col col-1" data-label="Command">.deleteevent | only for teachers</div>
             <div class="col col-2" data-label="Function">Use this command to delete events</div>
+          </li>
+          <li class="table-row">
+            <div class="col col-1" data-label="Command">.start {subject} | the subject is optional</div>
+            <div class="col col-2" data-label="Function">Use this command to start the study timer</div>
+          </li>
+          <li class="table-row">
+            <div class="col col-1" data-label="Command">.stop</div>
+            <div class="col col-2" data-label="Function">Use this command to start the study timer and get your study time</div>
           </li>
           <li class="table-row">
             <div class="col col-1" data-label="Command">.mute @member | only for teachers</div>
