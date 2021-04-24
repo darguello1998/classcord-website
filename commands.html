@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassCord</title>
+    <meta name="description" content="The bot that facilitates the use of discord in educational environments."/>
+    <meta name="keywords" content="classcord, ClassCord, CLASSCORD, Alex Craviotto, alex craviotto, pomodoro bot, pomodoro, productivity bot, student bot, study bot, school bot, remind bot, reminder bot, time study tracking"/>
+    <link rel="canonical" href="https://classcord.me/">
+    <link rel="icon" href="img/logo-rounded.png">
+    <link rel="shortcut icon" href="img/logo-rounded.png">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+    <!-- NavBar -->
+    <div>
+        <nav class="bg-green-400 flex items-center justify-between shadow-lg md:flex-shrink-0">
+            <div class="flex items-center m-2 2xl:m-7">
+                <img class="h-5 w-5 2xl:mt-1 2xl:h-9 2xl:w-9 2xl:mr-1" src="img/logo.png" alt="classcord logo">
+                <a href="https://classcord.me/" class="text-xs text-white font-black 2xl:text-2xl">ClassCord</span>
+            </div>
+            <div class="md:flex flex-grow text-sm text-white mt-2 font-medium">
+                <a class="mt-4 2xl:inline-block 2xl:mt-0 text-teal-lighter cursor-pointer hover:text-gray-100 mr-4 text-sm hidden 2xl:visible">Commands</a>
+                <a href="https://discord.gg/8VHnTbq" target="_blank" class="mt-4 2xl:inline-block 2xl:mt-0 text-teal-lighter cursor-pointer hover:text-gray-100 mr-4 text-sm hidden 2xl:visible">Help</a>
+                <a href="https://www.buymeacoffee.com/classcordbot" target="_blank" class="mt-4 2xl:inline-block 2xl:mt-0 text-teal-lighter cursor-pointer hover:text-gray-100 mr-4 text-sm hidden 2xl:visible">Support the project</a>
+                <a href="mailto:classcordthebot@gmail.com" class="mt-4 2xl:inline-block 2xl:mt-0 text-teal-lighter cursor-pointer hover:text-gray-100 mr-4 text-sm hidden 2xl:visible">Collaborate in ClassCord</a>
+            </div>
+            <div id="nav-toggle" class="openMenu visible 2xl:hidden mr-3 text-white"><i class="fa fa-bars fa-xs"></i></div>
+        </nav>
+    <!-- NavBarMenu Responsive -->
+        <div id="nav-content" class="hidden bg-green-400 flex flex-col shadow-sm font-semibold">
+            <a class="m-2 text-teal-lighter text-white text-xs">Commands</a>
+            <a href="https://discord.gg/8VHnTbq" class="m-2 text-teal-lighter text-white text-xs">Help</a>
+            <a href="https://www.buymeacoffee.com/classcordbot" class="m-2 text-teal-lighter text-white text-xs">Support</a>
+            <a href="mailto:classcordthebot@gmail.com" class="m-2 text-teal-lighter text-white text-xs">Collaborate</a>
+        </div>
+    </div>
+    <!-- Commands -->
+    <div class="mx-3 2xl:w-2/3 2xl:mx-auto">
+        <div class="mt-10 mb-10 bg-white shadow-lg rounded 2xl:mt-20 2xl:mb-20 mx-2 ">
+          <table class="text-left w-full border-collapsem"> 
+            <thead>
+              <tr>
+                <th class="py-2 2xl:py-4 px-6 text-white font-semibold  text-xs 2xl:text-base border-b border-grey-light bg-green-400">Command</th>
+                <th class="py-2 2xl:py-4 px-6 text-white font-semibold text-left  text-xs 2xl:text-base border-b border-grey-light bg-green-400">Function</th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-500 text-xs 2xl:text-sm font-light ">
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">.changeprefix {prefix} | only for the server owner</td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                    <p>Change the prefix of the server</p>
+                </td>
+              </tr>
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">.addteacher @member | only for server owner</td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                    <h2>Get a teacher role for the member</h2>
+                </td>
+              </tr>
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">.removeteacher @member | only for server owner</td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                    <h2>Remove the teacher rol for the members</h2>
+                </td>
+              </tr>
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">.ask {question}</td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                    <h2>Use this command to ask your teacher your question</h2>
+                </td>
+              </tr>
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">.remind {time to reminder}{content}</td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                    <h2>Use this command to create reminders. <br>Example: .remind 12m example or .remind 12h example</h2>
+                </td>
+              </tr>
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">.checkreminds</td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                    <h2>Use this command to check the reminds</h2>
+                </td>
+              </tr>
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">.create {event date} {title} | only for teachers</td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                    <h2>Use this command to create events like exams.<br>Example: .create 12m exam or .remind 12h exam</h2>
+                </td>
+              </tr>
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">.checkevents</td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                    <h2>Use this command to check the events</h2>
+                </td>
+              </tr>
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">.deleteevent | only for teachers</td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                    <h2>Use this command to delete events</h2>
+                </td>
+              </tr>
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">.startpomodoro short</td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                    <h2>Use this command to use the pomodoro short system<br> to improve productivity</h2>
+                </td>
+              </tr>
+               <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">.startpomodoro long</td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                    <h2>Use this command to use the pomodoro long system<br> to improve productivity</h2>
+                </td>
+              </tr>
+               <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">.stoppomodoro</td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                    <h2>Use this command to stop the current pomodoro</h2>
+                </td>
+              </tr>
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">.stats</td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                    <h2>Use this command to view your pomodoro stats</h2>
+                </td>
+              </tr>
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">.quote</td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                    <h2>Use this command to get motivational quotes</h2>
+                </td>
+              </tr>
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">.start {subject} | the subject is optional</td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                    <h2>Use this command to start the study timer</h2>
+                </td>
+              </tr>
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">.stop</td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                    <h2>Use this command to start the study timer<br> and get your study time</h2>
+                </td>
+              </tr>
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">.mute @member | only for teachers</td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                    <h2>Use this command to mute a specific student</h2>
+                </td>
+              </tr>
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">.unmute @member | only for teachers</td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                    <h2>Use this command to unmute a specific student</h2>
+                </td>
+              </tr>
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">.muteall | only for teachers</td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                    <h2>Use this command to mute all students</h2>
+                </td>
+              </tr>
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">.unmuteall | only for teachers</td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                    <h2>Use this command to unmute all students</h2>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    <script>
+    //Javascript to toggle the menu
+    document.getElementById('nav-toggle').onclick = function(){
+        document.getElementById('nav-content').classList.toggle("hidden");
+    }
+    </script>
+</body>
+</html>

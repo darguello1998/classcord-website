@@ -1,0 +1,207 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassCord</title>
+    <meta name="description" content="The bot that facilitates the use of discord in educational environments."/>
+    <meta name="keywords" content="classcord, ClassCord, CLASSCORD, Alex Craviotto, alex craviotto, pomodoro bot, pomodoro, productivity bot, student bot, study bot, school bot, remind bot, reminder bot, time study tracking, quotes bot, motivational bot"/>
+    <link rel="canonical" href="https://classcord.me/">
+    <link rel="icon" href="img/logo-rounded.png">
+    <link rel="shortcut icon" href="img/logo-rounded.png">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+    <!-- NavBar -->
+    <div>
+        <nav class="bg-green-400 flex items-center justify-between shadow-lg md:flex-shrink-0">
+            <div class="flex items-center m-2 2xl:m-7">
+                <img class="h-5 w-5 2xl:mt-1 2xl:h-9 2xl:w-9 2xl:mr-1" src="img/logo.png" alt="classcord logo">
+                <span class="text-xs text-white font-black 2xl:text-2xl">ClassCord</span>
+            </div>
+            <div class="md:flex flex-grow text-sm text-white mt-2 font-medium">
+                <a href="https://classcord.me/commands" class="mt-4 2xl:inline-block 2xl:mt-0 text-teal-lighter cursor-pointer hover:text-gray-100 mr-4 text-sm hidden 2xl:visible">Commands</a>
+                <a href="https://discord.gg/8VHnTbq" target="_blank" class="mt-4 2xl:inline-block 2xl:mt-0 text-teal-lighter cursor-pointer hover:text-gray-100 mr-4 text-sm hidden 2xl:visible">Help</a>
+                <a href="https://www.buymeacoffee.com/classcordbot" target="_blank" class="mt-4 2xl:inline-block 2xl:mt-0 text-teal-lighter cursor-pointer hover:text-gray-100 mr-4 text-sm hidden 2xl:visible">Support the project</a>
+                <a href="mailto:classcordthebot@gmail.com" class="mt-4 2xl:inline-block 2xl:mt-0 text-teal-lighter cursor-pointer hover:text-gray-100 mr-4 text-sm hidden 2xl:visible">Collaborate in ClassCord</a>
+            </div>
+            <div id="nav-toggle" class="openMenu visible 2xl:hidden mr-3 text-white"><i class="fa fa-bars fa-xs"></i></div>
+        </nav>
+    <!-- NavBarMenu Responsive -->
+        <div id="nav-content" class="hidden bg-green-400 flex  flex-col shadow-sm font-semibold">
+            <a href="https://classcord.me/commands" class="m-2 text-teal-lighter text-white text-xs">Commands</a>
+            <a href="https://discord.gg/8VHnTbq" class="m-2 text-teal-lighter text-white text-xs">Help</a>
+            <a href="https://www.buymeacoffee.com/classcordbot" class="m-2 text-teal-lighter text-white text-xs">Support</a>
+            <a href="mailto:classcordthebot@gmail.com" class="m-2 text-teal-lighter text-white text-xs">Collaborate</a>
+        </div>
+    </div>
+    <!-- Header -->
+    <div class="flex-1 m-3 2xl:flex 2xl:m-7 2xl:h-full">
+        <div class="mt-10 2xl:w-2/3 2xl:text-center 2xl:tracking-tight relative 2xl:mt-0">
+            <h1 class="tracking-tight text-2xl 2xl:mt-64 text-lg text-center font-semibold mx-2 font-bold 2xl:text-3xl 2xl:text-left 2xl:ml-10 2xl:leading-relaxed">Classcord is a bot developed with the purpose of using discord in an educational enviroment</h1>
+            <h2 class="ml-2 tracking-tight mt-3 text-sm text-center 2xl:text-lg 2xl:text-justify 2xl:font-normal 2xl:leading-tight text-gray-500 2xl:ml-10 mr-7">Classcord is a bot designed to focus on the world of education and improve productivity. With classcord we adapt discord to these areas in a way that any user without high technological knowledge can use.</h2>
+            <div class="text-center  2xl:ml-7">
+                <button class="mr-4 mt-20 text-sm h-10 w-36 2xl:mt-14 2xl:transition 2xl:text-base 2xl:duration-300 rounded-full bg-green-400 2xl:h-12 2xl:w-48 2xl:hover:bg-indigo-300 font-bold 2xl:tracking-wide 2xl:mr-16 text-white"><i class="fab fa-discord fa-sm font-normal"></i><a href="https://discord.com/oauth2/authorize?client_id=734683708816359484&scope=bot&permissions=809724976" target="_blank"> Add to Discord!</a></button>
+                <button class="mt-8 h-10 text-sm w-36 2xl:mt-14 2xl:transition 2xl:text-base 2xl:duration-300 rounded-full bg-gray-200 2xl:h-12 2xl:w-48 2xl:hover:bg-gray-300 font-semibold 2xl:tracking 2xl:mr-6"><a href="#whyclasscord?"> Why Classcord?</a></button>
+            </div>
+        </div>
+        <div class="m-5 mt-40 2xl:flex-2 2xl:w-2/4 2xl:ml-10 relative 2xl:mt-0">
+            <div class="2xl:min-w-screen 2xl:min-h-screen 2xl:mt-48 2xl:ml-10 items-center justify-center 2xl:px-5 2xl:py-5">
+                <div class="w-full mx-auto rounded-lg bg-white shadow-lg px-5 pt-5 pb-10 text-gray-800" style="max-width: 500px">
+                    <div class="w-full pt-1 pb-5">
+                        <div class="overflow-hidden rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg">
+                            <img src="img/img1.jpeg" alt="profile_images">
+                        </div>
+                    </div>
+                    <div class="w-full mb-10">
+                        <div class="text-3xl text-green-400 text-left leading-tight h-3">“</div>
+                        <p class="text-sm text-gray-600 text-justify px-5">I've been looking for a bot like ClassCord for more than 6 months now!
+                            I had setup an educational server for my University Lessons and it's working way better than any of the other "official" platforms. It gives me the chance to be more involved with students and create a community with them and them with each other. I do believe a Bot like ClassCord in times like this can make the difference for us teachers.</p>
+                        <div class="text-3xl text-green-400 text-right leading-tight h-1 ">”</div>
+                    </div>
+                    <div class="w-full">
+                        <p class="text-md text-green-400 font-bold text-center">Andrés Lara</p>
+                        <p class="text-xs text-gray-500 text-center">@patolara</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="mt-20 w-auto 2xl:flex-2 2xl:w-2/4 2xl:ml-10 2xl:mt-0 relative ">
+            <div class="2xl:min-w-screen 2xl:min-h-screen 2xl:mt-48 2xl:ml-5 2xl:mr-5 items-center justify-center px-5 py-5">
+                <div class="w-full mx-auto rounded-lg bg-white shadow-lg px-3 pt-5 pb-10 text-gray-800" style="max-width: 500px">
+                    <div class="w-full pt-1 pb-5">
+                        <div class="overflow-hidden rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg">
+                            <img src="img/img2.jpg" alt="profile_images">
+                        </div>
+                    </div>
+                    <div class="w-full mb-10">
+                        <div class="text-3xl text-green-400 text-left leading-tight h-3">“</div>
+                        <p class="text-sm text-gray-600 text-justify px-5">My server isn’t study-oriented- but Classcord has still managed to become an important part of it! Classcord has been brilliant for helping people struggling with school work motivation, in and out of lockdown. The pomodoro system with implemented breaks has been especially helpful! I really can’t recommend the bot and it’s brilliant functions enough!</p>
+                        <div class="text-3xl text-green-400 text-right leading-tight h-3 mt-8">”</div>
+                    </div>
+                    <div class="w-full">
+                        <p class="text-md text-green-400 font-bold text-center">Imogen</p>
+                        <p class="text-xs text-gray-500 text-center">@immocent_</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="mt-20 w-auto 2xl:flex-2 2xl:w-2/4 2xl:ml-10 2xl:mt-0 relative">
+            <div class="2xl:min-w-screen 2xl:min-h-screen 2xl:mt-48 2xl:ml-5 2xl:mr-5 items-center justify-center px-5 py-5">
+                <div class="w-full mx-auto rounded-lg bg-white shadow-lg px-3 pt-5 pb-10 text-gray-800" style="max-width: 500px">
+                    <div class="w-full pt-1 pb-5">
+                        <div class="overflow-hidden rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg">
+                            <img src="img/img3.jpg" alt="profile_images">
+                        </div>
+                    </div>
+                    <div class="w-full mb-10">
+                        <div class="text-3xl text-green-400 text-left leading-tight h-3">“</div>
+                        <p class="text-sm text-gray-600 text-justify px-5">When the first time i use classcord, i was pretty suprised how good the bot works, especially, when it has the feature to DM directly to the ''teacher" role when the "student" role ask a question, so the teacher dont need to scroll up and down looking for the question in the channel server, because the bot already DM the question automatically. It's such an awesome feature.</p>
+                        <div class="text-3xl text-green-400 text-right leading-tight h-3 mt-3">”</div>
+                    </div>
+                    <div class="w-full">
+                        <p class="text-md text-green-400 font-bold text-center">Lisa</p>
+                        <p class="text-xs text-gray-500 text-center">@hiimlisa_</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!-- Why Classcord? -->
+    <div id=whyclasscord? class="mt-16 2xl:mt-0 mb-28">
+        <div class="mx-10 pt-15">
+          <h2 class="text-center text-4xl mb-2 font-bold">Why Classcord?</h2>
+          <h2 class="text-center mb-20 text-4xl font-bold mt-10 2xl:animate-bounce"><i class="fas fa-angle-down"></i></h2>
+            <div class="grid gap-6 mb-8 md:grid-cols-2">
+                       <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs bg-gray-200">
+                         <h4 class="mb-4 font-bold text-xl text-gray-600">
+                           Easy
+                         </h4>
+                         <p class="text-gray-600">
+                            Classcord is designed to be as simple as possible for both people with experience in discord and people who cannot use it without a problem.
+                         </p>
+                       </div>
+                       <div class="text-gray-600 bg-gray-200 min-w-0 p-4 2xl:text-white 2xl:bg-green-400 rounded-lg shadow-xs">
+                         <h4 class="mb-4 text-xl font-bold">
+                           Verification system
+                         </h4>
+                         <p>
+                            Classcord incorporates a verification system with which to easily and securely assign student and teacher roles.
+                         </p>
+                       </div>
+                     </div>
+         </div>
+         <div class="mx-10 pt-15">
+            <div class="grid gap-6 mb-8 md:grid-cols-2">
+                       <div class="text-gray-600 bg-gray-200 min-w-0 p-4 2xl:text-white 2xl:bg-green-400 rounded-lg shadow-xs">
+                         <h4 class="mb-4 text-xl font-bold">
+                           Reminders
+                         </h4>
+                         <p>
+                            Classcord incorporates a reminder system with which you can schedule tasks and review them at any time. 
+                         </p>
+                       </div>
+                       <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs bg-gray-200">
+                         <h4 class="mb-4 font-bold text-xl text-gray-600">
+                           Events
+                         </h4>
+                         <p class="text-gray-600">
+                            Classcord incorporates a system of events with which teachers can assign tests, homework, readings... and students can consult them at any time.
+                         </p>
+                       </div>
+                     </div>
+        </div>
+        <div class="mx-10 pt-15">
+            <div class="grid gap-6 mb-8 md:grid-cols-2">
+                       <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs bg-gray-200">
+                         <h4 class="mb-4 font-bold text-xl text-gray-600">
+                           Pomodoro
+                         </h4>
+                         <p class="text-gray-600">
+                            Classcord includes the famous concentration method called "pomodoro" to improve productivity in our tasks.
+                         </p>
+                       </div>
+                       <div class="text-gray-600 bg-gray-200 min-w-0 p-4 2xl:text-white 2xl:bg-green-400 rounded-lg shadow-xs">
+                         <h4 class="mb-4 text-xl font-bold">
+                           Study time tracking
+                         </h4>
+                         <p>
+                            Classcord includes a system for tacking study time to know how many hours we have been working.
+                         </p>
+                       </div>
+                     </div>
+         </div>
+         <div class="mx-10 pt-15">
+            <div class="grid gap-6 mb-8 md:grid-cols-2">
+                       <div class="text-gray-600 bg-gray-200 min-w-0 p-4 2xl:text-white 2xl:bg-green-400 rounded-lg shadow-xs">
+                         <h4 class="mb-4 text-xl font-bold">
+                           Ask system
+                         </h4>
+                         <p>
+                            Classcord incorporates a simple command-based question system that students can use to ask their teachers questions in a quick and organized manner. 
+                         </p>
+                       </div>
+                       <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs bg-gray-200">
+                         <h4 class="mb-4 font-bold text-xl text-gray-600">
+                           Best discord experience
+                         </h4>
+                         <p class="text-gray-600">
+                            Classcord includes a series of commands that allow a complete and easy experience of discord calls. With these commands the teacher can easily modify aspects such as the microphone of his students.
+                         </p>
+                       </div>
+                     </div>
+        </div>
+    </div>
+
+   
+     
+
+
+	<script>
+		//Javascript to toggle the menu
+		document.getElementById('nav-toggle').onclick = function(){
+			document.getElementById('nav-content').classList.toggle("hidden");
+		}
+	</script>
+</body>
+</html>
