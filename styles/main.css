@@ -1,0 +1,7 @@
+/* We take the element out of the screen and make it not visible to measure its height/width */
+.measurable {
+  position: absolute;
+  visibility: hidden;
+  top: -200vh;
+  left: -200vw;
+}
